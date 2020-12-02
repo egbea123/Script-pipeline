@@ -6,14 +6,14 @@ pipeline {
    				 sh "mvn compile"          	 
    			 }     	 
    		 }     	 
-   	 stage("build and package") {          	 
+   	 stage(" Testing ") {          	 
    		 steps {               	 
-   				 sh "mvn clean package "          	 
+   				 sh "mvn test"          	 
    			 }     	 
    		 }
 	 stage("build and package") {          	 
    		 steps {               	 
-   				 sh "mvn clean package "          	 
+   				 sh "mvn clean package"          	 
    			 }     	 
    		 }
    	 }
